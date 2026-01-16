@@ -1,11 +1,29 @@
 package hojadetrabajo1.hdt1;
 
-public interface IRadio {
-        void prenderRadio();
-        void apagarRadio();
-        void avanzarEstacion();
-        void guardarEstacion(int numeroBoton);
-        void cargarEstacion(int numeroBoton);
-        void cambiarFM();
-        void cambiarAM();
+public class IRadio {
+    private boolean estado;
+	private String frecuencia;
+	private double amEstacion;
+	private double fmEstacion;
+	private double[] botones;
+	
+	public boolean getEstado() {
+		return estado;
+	}
+	
+	public String getFrecuencia() {
+		return frecuencia;
+	}
+	
+	public double getAMEstacion() {
+		return amEstacion;
+	}
+	
+	public double getFMEstacion() {
+		return fmEstacion;
+	}
+	
+	public double[] getBotones() {
+		return botones;
+	}
 }
