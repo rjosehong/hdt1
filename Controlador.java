@@ -1,10 +1,14 @@
-/*
-* @Autor: Juan Pablo Román y Rodrigo José Navas
-* @Package: hdt1
-* @Descripción: Este programa simula una radio, permite encender, apagar, 
-cambiar de frecuencia de AM a FM o viceversa, guardar estaciones y seleccionar estaciones guardadas.
-* @Version: 23/Enero/2026
-*/
+/**
+ * Autor: Juan Pablo Román y Rodrigo José Navas
+ * 
+ * La clase {@code Controlador} permite simular el funcionamiento de una radio.
+ * Controla acciones como encender y apagar la radio, cambiar entre frecuencias
+ * AM y FM, avanzar estaciones, guardar estaciones en botones y seleccionar
+ * estaciones previamente guardadas.
+ * 
+ * @version 23/Enero/2026
+ * @package hdt1
+ */
 
 package hdt1;
 //Importación de librerias
