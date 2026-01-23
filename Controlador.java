@@ -1,3 +1,11 @@
+/*
+* @Autor: Juan Pablo Román y Rodrigo José Navas
+* @Package: hdt1
+* @Descripción: Este programa simula una radio, permite encender, apagar, 
+cambiar de frecuencia de AM a FM o viceversa, guardar estaciones y seleccionar estaciones guardadas.
+* @Version: 23/Enero/2026
+*/
+
 package hdt1;
 //Importación de librerias
 import java.util.Scanner;
