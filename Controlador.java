@@ -1,4 +1,5 @@
 package hdt1;
+//Importación de librerias
 import java.util.Scanner;
 import java.util.ArrayList;
 import jdk.jfr.Frequency;
@@ -7,14 +8,17 @@ public class Controlador {
     Radio r = new Radio();
     Scanner sc = new Scanner(System.in);
 
+    //Listas para guardar botones
     ArrayList<Integer> BotonesAM = new ArrayList<Integer>(12);
     ArrayList<Double> BotonesFM = new ArrayList<Double>(12);
 
+    //Variables usadas en diferentes métodos
     private boolean AM = true;
     private int EstacionAM = 530;
     private double EstacionFM = 87.9;
     private String freq = "AM";
 
+    //Método para prender radio
     public void prenderRadio() {
         if (r.getEstado()==false) {
             System.out.println("¿Quiere encender la radio? (s/n)");
@@ -35,6 +39,7 @@ public class Controlador {
         }
     }
     
+    //Método para cambiar de frecuencia de AM a FM o viceversa
     public void setFrequencia() {
         if (freq.equalsIgnoreCase("AM")){
             System.out.println("¿Quiere cambiar de frecuencia a FM? (s/n)");
@@ -52,6 +57,7 @@ public class Controlador {
         }
     }
 
+    //Método para avanzar de estación en AM o FM
     public void avanzarEstacion() {
         if (this.AM) {
             this.EstacionAM += 10;
@@ -72,6 +78,7 @@ public class Controlador {
         }
     }
 
+    //Método para guardar la estación actual en un botón
     public void asignarBotones() {
         if (AM==true) {
             BotonesAM.add(EstacionAM);
@@ -81,6 +88,7 @@ public class Controlador {
         }
     }
 
+    //Método para poner una estación en un botón asignado
     public void escogerBoton() {
         if (AM==true) {
             System.out.println(BotonesAM);
@@ -96,6 +104,7 @@ public class Controlador {
         }
     }
     
+    //Método para apagar una estación
     public void apagarRadio() {
         if (r.getEstado()==true) {
             System.out.println("¿Quiere apagar la radio? (s/n)");
