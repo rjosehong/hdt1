@@ -1,6 +1,6 @@
-package hojadetrabajo1.hdt1;
+package hdt1;
 
-public class IRadio {
+public interface IRadio {
 	void prenderRadio();
     void apagarRadio();
     void avanzarEstacion();
@@ -8,4 +8,5 @@ public class IRadio {
     void cargarEstacion(int numeroBoton);
     void cambiarFM();
     void cambiarAM();
+    
 }

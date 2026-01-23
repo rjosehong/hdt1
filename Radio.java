@@ -1,4 +1,4 @@
-package hojadetrabajo1.hdt1;
+package hdt1;
 
 public class Radio {
     private boolean estado;
@@ -26,4 +26,24 @@ public class Radio {
 	public double[] getBotones() {
 		return botones;
 	}
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    public void setFrecuencia(String frecuencia) {
+        this.frecuencia = frecuencia;
+    }
+
+    public void setAmEstacion(double amEstacion) {
+        this.amEstacion = amEstacion;
+    }
+
+    public void setFmEstacion(double fmEstacion) {
+        this.fmEstacion = fmEstacion;
+    }
+
+    public void setBotones(double[] botones) {
+        this.botones = botones;
+    }
 }
